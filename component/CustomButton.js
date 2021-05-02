@@ -1,9 +1,12 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import { Colors } from '../constants';
+
+
 
 const CustomButton = ({ onPress, text, round, icon, iconColor, danger, style }) => {
   let btnStyle = {...styles.container, ...style};
@@ -16,7 +19,7 @@ const CustomButton = ({ onPress, text, round, icon, iconColor, danger, style }) 
   }
 
   return (
-    <TouchableHighlight onPress={onPress} activeOpacity={0.9} style={!round ? styles.round : {}} underlayColor="transparent">
+    <TouchableHighlight onPress={onPress}   underlayColor="transparent">
       <View style={btnStyle}>
         {icon && <Icon name={icon} size={24} color={iconColor} style={styles.icon} />}
         <Text style={styles.text}>{text}</Text>

@@ -23,7 +23,7 @@ export default {
         borderLeftColor: Colors.primary,
         borderBottomWidth:2,
         borderBottomColor:Colors.primary,
-        
+
       },
       input: {
         borderBottomWidth: 2,
@@ -50,6 +50,7 @@ export default {
         width:Dimensions.get('window').width,
         height:Dimensions.get('window').height,
         opacity:0.02,
-    
+
+
       }
 };

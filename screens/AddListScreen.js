@@ -49,7 +49,7 @@ const AddListScreen = ({ navigation }) => {
             style={globalStyles.img}
             resizeMode="stretch"/>
         <TextInput style={globalStyles.input} value={name} onChangeText={(val) => setName(val)} placeholder="List name" placeholderTextColor={Colors.tertiary} />
-        <CustomButton text="Submit" onPress={submitHandler} round />
+        <CustomButton text="Submit" onPress={submitHandler} round style={styles.btn} />
       </View>
     </TouchableWithoutFeedback>
   );
@@ -62,6 +62,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     flex: 1,
   },
+  btn:{
+    margin:10,
+  }
 });
 
 export default AddListScreen;

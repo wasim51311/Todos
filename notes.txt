@@ -1,0 +1,35 @@
+# Step one :
+    create react-native-config.js file and inside it we define the folder of fonts 
+
+# Step two (Praper owr redux enviroment) :
+    create store folder and inside it create two folders /actions and reducers/
+    these folders which we will put the redux component inside them
+    -First create folder types and inside it create types.js which contain the constants of
+     type of actions
+    -Second inside reducers :=> we create two files listReducer.js and taskReducer.js
+    (رامي نفس الشرح بملف التاسك ريدوسر نفسو بينطبق على الليست ريدوسر)   
+    -Third inside actions : => we create two files listActions.js and taskActions.js
+            (نفس الشرح على التاسك اكشن بينطبق على الليست اكشن)    
+    -in the store folder (root folder of redux) create index.js which contain combineReducers
+     that we just created
+
+#step Three  :
+    edit the index.js but be attention about this file index.js which exist in the root folder
+    of our project not any other index.js
+    -in this file we import our store from store folder and import React from 'react'
+# Step Four :
+    -Create utils folder which contain index.js and inside it 
+            import { Dimensions } from 'react-native';
+     and define the width and height off our phone screen
+# Step Five :
+    -Create style folder which contain globle.js this file contain the style of our app 
+# Step six :
+    -Create constants folder and inside it index.js which conatin our constants and colors we 
+     we will use in our app
+# Step eight :
+    -Create folder screens :
+      inside it create HomeScreen.js - ListScreen.js - TaskScreen.js - AddTaskScreen.js -AddListScreen.js
+      these screen of our app
+# Step severn :
+    -Create navigation folder and inside it we create AppNavigation.js which contain the 
+        definition of our screen and  enable us to move between them               

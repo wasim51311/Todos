@@ -9,6 +9,8 @@ export const Colors ={
     black:'#000',
 };
 
+
+//Remember STORAGE_KEYS in our listActions.js and taskActions.js
 export const STORAGE_KEYS={
     lists:'myapp_lists',
     tasks:'myapp_tasks',
